@@ -1,3 +1,21 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ],
+  "rules": {
+    "eqeqeq": "warn",
+    "curly": "error",
+    "quotes": ["warn", "single"],
+    "no-trailing-spaces": "warn",
+    "indent": ["error", 2],
+    "semi": ["error", "never"],
+    "no-console": "warn",
+    "no-unused-vars": "warn",
+    "comma-dangle": ["warn", "always-multiline"],
+    "object-curly-spacing": ["error", "always"],
+    "react/jsx-uses-vars": "warn",
+    "curly": "off"
+  }
 }

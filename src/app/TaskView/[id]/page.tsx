@@ -1,21 +1,23 @@
 'use client'
 
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import {
-  Board,
   Modal,
+  Task,
+  TaskContentModal,
   Toast,
   ToolsBar,
-} from './components'
-import { useModalStore } from './state/modalStore'
-import { useToastStore } from './state/toastStore'
+} from '../../components'
+import { useModalStore } from '../../state/modalStore'
+import { useToastStore } from '../../state/toastStore'
+import { useTaskStore } from '@/app/state/taskStore'
 import Link from 'next/link'
-
-export default function Home() {
+const TaskView = ({ params }: { params: { id: string } }) => {
   const { isToastVisible, status, heading } = useToastStore()
-  const { isModalVisible, children, removeModal } = useModalStore()
+  const { isModalVisible, children: child, removeModal } = useModalStore()
+  const { getTask } = useTaskStore()
 
-  const bgBallsClassName = 'absolute rounded-full mix-blend-multiply filter blur-xl w-72 h-72 opacity-50 animate-blob dark:mix-blend-normal'
+  const bgBallsClassName = '-z-10 absolute rounded-full mix-blend-multiply filter blur-xl w-72 h-72 opacity-50 animate-blob dark:mix-blend-normal'
 
   useEffect(() => {
     if (isModalVisible) {
@@ -31,7 +33,7 @@ export default function Home() {
         <Toast varient={status} heading={heading} isToastVisible={isToastVisible} />
       </div>
       <Modal isModalVisible={isModalVisible}>
-        {children}
+        {child}
       </Modal>
       <div className={`
         ${bgBallsClassName}
@@ -73,10 +75,20 @@ export default function Home() {
           </section>
         </header>
 
-        <main className="flex justify-center items-center">
-          <Board />
+        <main className="mt-[2%] p-10 rounded-xl shadow-sm bg-white/50 dark:bg-black/40 flex flex-col md:flex-row justify-center items-start z-30 gap-x-16">
+          {getTask(params.id) ? (
+            <>
+              <TaskContentModal columnId='' taskId={params.id} />
+              <div className="hover:scale-110 duration-150">
+                <h1 className="text-2xl">Preview</h1>
+                <Task task={getTask(params.id)!} />
+              </div>
+            </>
+          ) : (<h2>Something is wrong!</h2>) }
         </main>
       </section>
     </>
   )
 }
+
+export default TaskView

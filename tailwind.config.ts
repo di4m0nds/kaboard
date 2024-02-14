@@ -8,13 +8,36 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        blob: 'blob 8s infinite',
+      },
+      keyframes: {
+        blob: {
+          '0%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+          '33%': {
+            transform: 'translate(-50px, 50px) scale(1.2)',
+          },
+          '66%': {
+            transform: 'translate(10px, 20px) scale(0.8)',
+          },
+          '100%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    fontFamily: {
+      sans: ['var(--font-inter)'],
+    },
   },
   plugins: [],
+  darkMode: 'class',
 }
 export default config

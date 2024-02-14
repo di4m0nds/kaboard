@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board Component Behavior Renders existing board 1`] = `
+<DocumentFragment>
+  <section
+    class="w-full h-auto rounded-xl shadow-sm overflow-hidden text-white max-w-[90%] mb-10 md:scale-100 scale-95"
+  >
+    <div
+      class="w-full h-full relative text-black dark:text-white"
+      style="background-image: url(); background-size: cover; background-position: center;"
+    >
+      <div
+        class="absolute inset-0 bg-white/20 dark:bg-black/30"
+      />
+      <div
+        class="relative z-10 px-5 md:px-8 py-5 flex flex-col justify-start"
+      >
+        <header
+          class="w-full flex justify-start items-center relative"
+        >
+          <section
+            class="w-full text-black dark:text-white"
+          >
+            <h1
+              class="text-4xl font-bold group"
+            />
+            <p
+              class="mt-2 text-pretty w-full md:w-[60%] text-xl font-normal group"
+            />
+            <nav
+              class="w-full mt-0"
+            >
+              <ul
+                class="flex gap-x-2"
+              >
+                <li
+                  class="flex flex-col md:flex-row items-start md:items-end"
+                >
+                  <button
+                    class="
+                    group text-black dark:text-white
+                    flex gap-x-2 justify-center items-center
+                    px-4 py-2 rounded-xl
+                    border-2 border-solid border-lime-300/70
+                    hover:scale-[95%] hover:bg-lime-300/70 hover:shadow-lg
+                    bg-lime-200/60
+                    dark:bg-lime-600 dark:hover:bg-lime-500 
+                    active:scale-100
+                    duration-200
+                  "
+                    data-testid="Edit Board"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-4 h-4 group-hover:scale-75 duration-300"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M19 11V9a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L12 2.757V2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L2.929 4.343a1 1 0 0 0 0 1.414l.536.536L2.757 8H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535L8 17.243V18a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H18a1 1 0 0 0 1-1Z"
+                        />
+                        <path
+                          d="M10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        />
+                      </g>
+                    </svg>
+                    Edit Board
+                  </button>
+                </li>
+                <li
+                  class="flex flex-col md:flex-row items-start md:items-end"
+                >
+                  <button
+                    class="
+                    group text-black dark:text-white
+                    flex gap-x-2 justify-center items-center
+                    px-4 py-2 rounded-xl
+                    border-2 border-solid border-lime-300/70
+                    hover:scale-[95%] hover:bg-lime-300/70 hover:shadow-lg
+                    bg-lime-200/60
+                    dark:bg-lime-600 dark:hover:bg-lime-500 
+                    active:scale-100
+                    duration-200
+                  "
+                    data-testid="New Column"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-4 h-4 group-hover:scale-75 duration-300"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9 1v16M1 9h16"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    New Column
+                  </button>
+                  <span
+                    class="text-sm text-gray-400 ml-2"
+                  >
+                    0 columns created.
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <p
+            class="w-full text-right text-9xl text-gray-100 dark:text-gray-800/20 font-bold hidden md:block absolute right-2 z-[-10] select-none"
+          >
+            #0.asdfsa3
+          </p>
+        </header>
+      </div>
+      <div
+        class="relative p-2 overflow-x-auto bg-gray-100/40 dark:bg-transparent"
+      >
+        <ul
+          class="flex  gap-x-4 justify-start min-h-[100px]"
+        />
+      </div>
+      <div
+        id="DndDescribedBy-0"
+        style="display: none;"
+      >
+        
+    To pick up a draggable item, press the space bar.
+    While dragging, use the arrow keys to move the item.
+    Press space again to drop the item in its new position, or press escape to cancel.
+  
+      </div>
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        id="DndLiveRegion-0"
+        role="status"
+        style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Board Component Behavior Renders existing board 2`] = `
+<DocumentFragment>
+  <section
+    class="w-full h-auto rounded-xl shadow-sm overflow-hidden text-white max-w-[90%] mb-10 md:scale-100 scale-95"
+  >
+    <div
+      class="w-full h-full relative text-black dark:text-white"
+      style="background-image: url(); background-size: cover; background-position: center;"
+    >
+      <div
+        class="absolute inset-0 bg-white/20 dark:bg-black/30"
+      />
+      <div
+        class="relative z-10 px-5 md:px-8 py-5 flex flex-col justify-start"
+      >
+        <header
+          class="w-full flex justify-start items-center relative"
+        >
+          <section
+            class="w-full text-black dark:text-white"
+          >
+            <h1
+              class="text-4xl font-bold group"
+            />
+            <p
+              class="mt-2 text-pretty w-full md:w-[60%] text-xl font-normal group"
+            />
+            <nav
+              class="w-full mt-0"
+            >
+              <ul
+                class="flex gap-x-2"
+              >
+                <li
+                  class="flex flex-col md:flex-row items-start md:items-end"
+                >
+                  <button
+                    class="
+                    group text-black dark:text-white
+                    flex gap-x-2 justify-center items-center
+                    px-4 py-2 rounded-xl
+                    border-2 border-solid border-lime-300/70
+                    hover:scale-[95%] hover:bg-lime-300/70 hover:shadow-lg
+                    bg-lime-200/60
+                    dark:bg-lime-600 dark:hover:bg-lime-500 
+                    active:scale-100
+                    duration-200
+                  "
+                    data-testid="Edit Board"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-4 h-4 group-hover:scale-75 duration-300"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M19 11V9a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L12 2.757V2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L2.929 4.343a1 1 0 0 0 0 1.414l.536.536L2.757 8H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535L8 17.243V18a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H18a1 1 0 0 0 1-1Z"
+                        />
+                        <path
+                          d="M10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        />
+                      </g>
+                    </svg>
+                    Edit Board
+                  </button>
+                </li>
+                <li
+                  class="flex flex-col md:flex-row items-start md:items-end"
+                >
+                  <button
+                    class="
+                    group text-black dark:text-white
+                    flex gap-x-2 justify-center items-center
+                    px-4 py-2 rounded-xl
+                    border-2 border-solid border-lime-300/70
+                    hover:scale-[95%] hover:bg-lime-300/70 hover:shadow-lg
+                    bg-lime-200/60
+                    dark:bg-lime-600 dark:hover:bg-lime-500 
+                    active:scale-100
+                    duration-200
+                  "
+                    data-testid="New Column"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="w-4 h-4 group-hover:scale-75 duration-300"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9 1v16M1 9h16"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </svg>
+                    New Column
+                  </button>
+                  <span
+                    class="text-sm text-gray-400 ml-2"
+                  >
+                    0 columns created.
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <p
+            class="w-full text-right text-9xl text-gray-100 dark:text-gray-800/20 font-bold hidden md:block absolute right-2 z-[-10] select-none"
+          >
+            #0.asdfsa3
+          </p>
+        </header>
+      </div>
+      <div
+        class="relative p-2 overflow-x-auto bg-gray-100/40 dark:bg-transparent"
+      >
+        <ul
+          class="flex  gap-x-4 justify-start min-h-[100px]"
+        />
+      </div>
+      <div
+        id="DndDescribedBy-0"
+        style="display: none;"
+      >
+        
+    To pick up a draggable item, press the space bar.
+    While dragging, use the arrow keys to move the item.
+    Press space again to drop the item in its new position, or press escape to cancel.
+  
+      </div>
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        id="DndLiveRegion-0"
+        role="status"
+        style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
+      />
+    </div>
+  </section>
+</DocumentFragment>
+`;
