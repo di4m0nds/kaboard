@@ -1,5 +1,5 @@
 import ThemeSwitch from '../ThemeSwitch/ThemeSwitch'
-import { DarkMode, GitHub } from '../svg'
+import { GitHub } from '../svg'
 
 const ToolsBar = () => {
   return (

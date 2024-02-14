@@ -8,7 +8,6 @@ import BoardFound from './BoardFound'
 import ColumnList from '../Column/ColumnList'
 import { useToastStore } from '@/app/state/toastStore'
 import { SkeletonBoard } from '../Skeleton'
-import SkeletonColumn from '../Skeleton/SkeletonColumn'
 
 const Board = () => {
   const { showToast, removeToast } = useToastStore()
@@ -21,7 +20,7 @@ const Board = () => {
 
   useEffect(() => setBoard(
     getBoard(boards[0]?.boardId ?? DEFAULT_BOARD.boardId)
-  ), [boards])
+  ), [boards, getBoard])
 
   const createNewBoard = () => {
     addBoard(DEFAULT_BOARD)
@@ -66,13 +65,6 @@ const Board = () => {
         </div>
 
         {boards.length > 0 && board && <ColumnList />}
-        {/*isLoading && (     COLUMN SKELETON
-          <div className="relative py-3 pl-10 overflow-x-auto bg-gray-100">
-            <ul className="flex gap-x-4 justify-start">
-              {isLoading && [1,2,3].map((v) => <li key={v}><SkeletonColumn className="" /></li>)}
-            </ul>
-          </div>
-        )*/}
       </div>
     </section>
   )

@@ -1,4 +1,4 @@
-import { useModalStore } from '@/app/state/modalStore';
+import { useModalStore } from '@/app/state/modalStore'
 import { ReactNode } from 'react'
 
 interface ModalProps {

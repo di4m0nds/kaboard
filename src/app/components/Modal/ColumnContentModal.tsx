@@ -14,10 +14,7 @@ interface ColumnContentModalProps {
   setVisibility?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const ColumnContentModal: React.FC<ColumnContentModalProps> = ({
-  column,
-  setVisibility,
-}) => {
+const ColumnContentModal: React.FC<ColumnContentModalProps> = ({ column }) => {
   const { addColumn, editColumn, getColumn, removeColumn } = useColumnStore()
   const { tasks, removeTask } = useTaskStore()
   const { showToast, removeToast } = useToastStore()

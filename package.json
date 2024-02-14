@@ -1,6 +1,6 @@
 {
   "name": "kaboard",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -49,10 +49,5 @@
   "bugs": {
     "url": "https://github.com/di4m0nds/kaboard/issues"
   },
-  "homepage": "https://github.com/di4m0nds/kaboard#readme",
-  "engines": {
-    "node": ">=18.18.0",
-    "npm": ">=10.2.4",
-    "pnpm": ">=8.14.1"
-  }
+  "homepage": "https://github.com/di4m0nds/kaboard#readme"
 }

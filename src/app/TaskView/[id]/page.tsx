@@ -25,7 +25,7 @@ const TaskView = ({ params }: { params: { id: string } }) => {
         if (event.key === 'Escape') removeModal()
       }, false)
     }
-  }, [isModalVisible])
+  }, [isModalVisible, removeModal])
 
   return (
     <>
