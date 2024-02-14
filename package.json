@@ -49,10 +49,5 @@
   "bugs": {
     "url": "https://github.com/di4m0nds/kaboard/issues"
   },
-  "homepage": "https://github.com/di4m0nds/kaboard#readme",
-  "engines": {
-    "node": ">18.x",
-    "npm": ">10.x",
-    "pnpm": ">8.x"
-  }
+  "homepage": "https://github.com/di4m0nds/kaboard#readme"
 }
