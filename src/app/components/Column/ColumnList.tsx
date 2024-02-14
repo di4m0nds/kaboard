@@ -15,7 +15,7 @@ import {
 } from '@dnd-kit/core'
 import {
   SortableContext,
-  arrayMove
+  arrayMove,
 } from '@dnd-kit/sortable'
 
 import { useMemo, useState } from 'react'
@@ -23,11 +23,10 @@ import { ColumnModel } from '@/app/types/column'
 import { TaskModel } from '@/app/types/task'
 import { useTaskStore } from '@/app/state/taskStore'
 import { createPortal } from 'react-dom'
-import SkeletonColumn from '../Skeleton/SkeletonColumn'
 
 const ColumnList = () => {
   const { columns, setColumns } = useColumnStore()
-  const { setTasks, tasks } = useTaskStore()
+  const { setTasks } = useTaskStore()
 
   const columnsId = useMemo(() => columns.map((col) => col.columnId), [columns])
 
@@ -138,7 +137,7 @@ const ColumnList = () => {
       onDragOver={debounce(onDragOver, 80)}
     >
       <div className="relative p-2 overflow-x-auto bg-gray-100/40 dark:bg-transparent">
-        <ul className="flex  gap-x-4 justify-start min-h-[100px]">
+        <ul className="flex  gap-x-4 justify-start">
           <SortableContext items={columnsId}>
             {!isLoading && columns.length > 0
               ? columns.map((data, i) =>

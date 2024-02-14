@@ -21,7 +21,7 @@ interface TaskContentModalProps {
 const TaskContentModal = ({ columnId, taskId }: TaskContentModalProps) => {
   const { getTask, addTask, editTask } = useTaskStore()
   const { showToast, removeToast } = useToastStore()
-  const { removeModal, showModal } = useModalStore()
+  const { removeModal } = useModalStore()
 
   const initialFormValues: TaskModel = {
     taskId: generateID(),

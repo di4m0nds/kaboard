@@ -1,5 +1,4 @@
 import { HTMLInputTypeAttribute, useEffect } from 'react'
-import { TaskModel } from '@/app/types/task'
 
 interface InputLabelProps<T extends object, K extends keyof T> {
   id: string | null,
@@ -22,9 +21,11 @@ const InputLabel = <T extends object, K extends keyof T>({
   required,
   handleChange,
 }: InputLabelProps<T, K>) => {
+
   useEffect(() => {
-    setFormData(_ => ({ ...formData }))
+    setFormData(() => ({ ...formData }))
   }, [setFormData])
+
   return (
     <div className="pb-2 flex flex-col">
       <label

@@ -1,8 +1,8 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { ColumnContentModal, Draggable, Droppable, Modal, Task, TaskContentModal, TaskList } from '../'
-import { DndContext, DragOverlay, KeyboardSensor, MouseSensor, TouchSensor, UniqueIdentifier, useSensor, useSensors } from '@dnd-kit/core'
+import { ColumnContentModal, TaskContentModal, TaskList } from '../'
+import { UniqueIdentifier } from '@dnd-kit/core'
 import { PenIcon, PlusIcon, Settings } from '../svg'
 import { useColumnStore } from '@/app/state/columnStore'
 import { ColumnModel } from '@/app/types/column'
@@ -22,12 +22,10 @@ const Column = ({ columnId, columnData }: ColumnProps) => {
   const { columns, editColumn } = useColumnStore()
   const { tasks } = useTaskStore()
   const { showToast, removeToast } = useToastStore()
-  const { showModal, isModalVisible, removeModal } = useModalStore()
+  const { showModal } = useModalStore()
 
   const inputRef = useRef<HTMLInputElement>(null)
 
-  const [showSettings, setShowSettings] = useState<boolean>(false)
-  const [showTaskSettings, setShowTaskSettings] = useState<boolean>(false)
   const [editMode, setEditMode] = useState(false)
   const [data, setData] = useState<ColumnModel | null>(columns.find(col => col.columnId === columnId) ?? null)
 
@@ -37,7 +35,7 @@ const Column = ({ columnId, columnData }: ColumnProps) => {
       setData(column)
     }
     if (inputRef.current) inputRef.current.focus
-  }, [columns])
+  }, [columns, columnId])
 
   const {
     setNodeRef,

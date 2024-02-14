@@ -1,10 +1,10 @@
 'use client'
 
-import { useBoardStore } from "@/app/state/boardStore"
-import { useModalStore } from "@/app/state/modalStore"
-import { useToastStore } from "@/app/state/toastStore"
-import { BoardModel } from "@/app/types/board"
-import { useRef, useState } from "react"
+import { useBoardStore } from '@/app/state/boardStore'
+import { useModalStore } from '@/app/state/modalStore'
+import { useToastStore } from '@/app/state/toastStore'
+import { BoardModel } from '@/app/types/board'
+import { useState } from 'react'
 
 interface BoardContentModalProps {
   boardId: string
@@ -51,7 +51,7 @@ const BoardContentModal: React.FC<BoardContentModalProps> = ({ boardId }) => {
           id="boardName"
           defaultValue={board.name ?? ''}
           onChange={(e) => setBoard( prev => ({ ...prev, name: e.target.value }))}
-          className={`w-full px-3 py-2 border rounded focus:outline-none dark:bg-transparent`}
+          className="w-full px-3 py-2 border rounded focus:outline-none dark:bg-transparent"
           onKeyDown={(e) => {
             if (e.key !== 'Enter') return
             saveSettings()
@@ -68,7 +68,7 @@ const BoardContentModal: React.FC<BoardContentModalProps> = ({ boardId }) => {
           id="boardDescription"
           defaultValue={board.description ?? ''}
           onChange={(e) => setBoard( prev => ({ ...prev, description: e.target.value }))}
-          className={`w-full px-3 py-2 border rounded focus:outline-none dark:bg-transparent`}
+          className="w-full px-3 py-2 border rounded focus:outline-none dark:bg-transparent"
           onKeyDown={(e) => {
             if (e.key !== 'Enter') return
             saveSettings()

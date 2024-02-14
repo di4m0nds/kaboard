@@ -1,9 +1,8 @@
 'use client'
 
 import { BoardModel } from '@/app/types/board'
-import { PenIcon, PlusIcon, Settings } from '../svg'
-import { ColumnContentModal, Modal } from '..'
-import { useState } from 'react'
+import { PlusIcon, Settings } from '../svg'
+import { ColumnContentModal } from '..'
 import { applyStylingToKeywords } from '@/app/utils/functions'
 import { useColumnStore } from '@/app/state/columnStore'
 import { useModalStore } from '@/app/state/modalStore'
@@ -91,10 +90,6 @@ const BoardFound = ({ board }: BoardFoundProps) => {
           #{boardId}
         </p>
       </header>
-
-      {/*<Modal onClose={closeCreateColumnPopUp} isOpen={showColumnPopUp}>
-        <ColumnContentModal column={null} setVisibility={setShowColumnPopUp} />
-      </Modal>*/}
     </>
   )
 }
