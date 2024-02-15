@@ -12,8 +12,10 @@ Check out the deployments of Kaboard on GitHub: [Deployments](https://github.com
 - Open your web browser and go to [kaboard.vercel.app](https://kaboard.vercel.app).
 - Create new boards and customize them according to your workflow.
 - Add tasks to your boards and organize them into columns.
-<!-- - Drag and drop tasks to update their status and track progress. -->
-<!-- Collaborate with team members by sharing boards and tasks. -->
+- Drag and drop tasks to update their status and track progress.
+
+### DEMO
+![kaboard](https://github.com/di4m0nds/kaboard/tree/main/.assets/DEMO.png)
 
 ## Technologies Used
 
