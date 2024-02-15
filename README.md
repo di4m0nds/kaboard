@@ -15,7 +15,7 @@ Check out the deployments of Kaboard on GitHub: [Deployments](https://github.com
 - Drag and drop tasks to update their status and track progress.
 
 ### DEMO
-![kaboard](https://github.com/di4m0nds/kaboard/tree/main/.assets/DEMO.png)
+![kaboard](https://github.com/di4m0nds/kaboard/blob/main/.assets/DEMO.png)
 
 ## Technologies Used
 
