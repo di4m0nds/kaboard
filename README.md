@@ -30,4 +30,4 @@ Check out the deployments of Kaboard on GitHub: [Deployments](https://github.com
 We welcome contributions from the community! If you have ideas for new features, improvements, or bug fixes, please submit a pull request or open an issue on GitHub.
 
 ## License
-Kaboard is licensed under the **MIT License**. Feel free to use, modify, and distribute the code for your own projects.
+Kaboard is licensed under the [**MIT License**](./LICENSE). Feel free to use, modify, and distribute the code for your own projects.
